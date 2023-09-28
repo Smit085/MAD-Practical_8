@@ -70,11 +70,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:trackTint="#C1F2F8"
+            app:thumbTint="@color/light_blue"
+            android:checked="true"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_addalarm"
         android:layout_width="70dp"
         android:layout_height="70dp"
