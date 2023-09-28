@@ -6,4 +6,23 @@
     </style>
 
     <style name="Theme.Mad_app085_p8" parent="Base.Theme.Mad_app085_p8" />
+
+
+    <!--Custom Styles-->
+    <style name="text_active">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_inactive">
+        <item name="android:textColor">@color/white_inactive</item>
+    </style>
+
+    <style name="screen">
+        <item name="android:background">@color/light_black</item>
+    </style>
+
+    <style name="button">
+        <item name="android:background">@color/light_blue</item>
+    </style>
+
 </resources>

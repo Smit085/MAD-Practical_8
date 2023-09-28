@@ -15,6 +15,7 @@
         android:textSize="54sp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="70dp"
+        style="@style/text_active"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -32,6 +33,7 @@
             android:id="@+id/txt_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/text_active"
             android:text="5:45"
             android:textStyle="bold"
             android:textSize="42sp"
@@ -42,6 +44,7 @@
             android:id="@+id/txt_timeconv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/text_active"
             android:layout_marginLeft="10dp"
             android:text="AM"
             android:textStyle="bold"
@@ -54,6 +57,7 @@
             android:id="@+id/txt_timedur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/text_active"
             android:text="Tomorrow"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -76,6 +80,7 @@
         android:layout_height="70dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/baseline_add_circle_24"
+        style="@style/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
