@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
             myTimePicker = TimePickerDialog(this,
                 { tp, hrs, min -> sendDialogDataToActivity(hrs, min) }, hour, minute, false)
-                myTimePicker.show()
+            myTimePicker.show()
         }
 
     }
