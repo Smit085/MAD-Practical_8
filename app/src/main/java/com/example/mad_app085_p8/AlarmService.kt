@@ -5,21 +5,25 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.IBinder
 
-abstract class AlarmService: Service() {
-    lateinit var mp: MediaPlayer
+class AlarmService : Service() {
+    private lateinit var mp: MediaPlayer
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-
-        if(intent != null){
+        if (intent != null) {
             mp = MediaPlayer.create(this, R.raw.alarm)
-            mp?.start()
+            mp.start()
         }
 
         return START_STICKY
     }
 
     override fun onDestroy() {
-        mp?.stop()
+        mp.stop()
+        mp.release()
         super.onDestroy()
+    }
+
+    override fun onBind(intent: Intent?): IBinder? {
+        return null
     }
 }
