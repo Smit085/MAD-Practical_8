@@ -47,27 +47,27 @@ class MainActivity : AppCompatActivity() {
                 pendingIntent = null
                 Snackbar.make(binding.root, "Alarm Canceled",Snackbar.LENGTH_SHORT).show()
             }
-            else{
-                val alarmCalendar= Calendar.getInstance()
-                val year: Int = alarmCalendar.get(Calendar.YEAR)
-                val month: Int = alarmCalendar.get(Calendar.MONTH)
-                val day: Int = alarmCalendar.get(Calendar.DATE)
-                val hour = (binding.txtTime.text.split(":")[0]).toInt()
-                val minute = (binding.txtTime.text.split(":")[1]).toInt()
-                alarmCalendar.set(year, month, day, hour, minute, 0)
-                setAlarm(alarmCalendar.timeInMillis,"Start")
-            }
+//            else{
+//                val alarmCalendar= Calendar.getInstance()
+//                val year: Int = alarmCalendar.get(Calendar.YEAR)
+//                val month: Int = alarmCalendar.get(Calendar.MONTH)
+//                val day: Int = alarmCalendar.get(Calendar.DATE)
+//                val hour = (binding.txtTime.text.split(":")[0]).toInt()
+//                val minute = (binding.txtTime.text.split(":")[1]).toInt()
+//                alarmCalendar.set(year, month, day, hour, minute, 0)
+//                setAlarm(alarmCalendar.timeInMillis,"Start")
+//            }
         }
 
-        binding.constSetalarm.setOnClickListener{
-            val myTimePicker: TimePickerDialog
-            val hour = (binding.txtTime.text.split(":")[0]).toInt()
-            val minute = (binding.txtTime.text.split(":")[1]).toInt()
-
-            myTimePicker = TimePickerDialog(this,
-                { tp, hrs, min -> sendDialogDataToActivity(hrs, min) }, hour, minute, false)
-            myTimePicker.show()
-        }
+//        binding.constSetalarm.setOnClickListener{
+//            val myTimePicker: TimePickerDialog
+//            val hour = (binding.txtTime.text.split(":")[0]).toInt()
+//            val minute = (binding.txtTime.text.split(":")[1]).toInt()
+//
+//            myTimePicker = TimePickerDialog(this,
+//                { tp, hrs, min -> sendDialogDataToActivity(hrs, min) }, hour, minute, false)
+//            myTimePicker.show()
+//        }
     }
 
     private fun sendDialogDataToActivity(hrs: Int, min: Int) {

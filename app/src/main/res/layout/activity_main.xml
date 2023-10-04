@@ -70,9 +70,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:trackTint="#C1F2F8"
             app:thumbTint="@color/light_blue"
-            android:checked="false"
+            android:checked="true"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
